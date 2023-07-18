@@ -1,4 +1,5 @@
 package com.fssa.corejava.day04.solved.inheritancedemo2;
+//import com.fssa.corejava.day04.solved.inheritancedemo2.Animal;
 
 /**
  * @author Vinit Gore
@@ -16,6 +17,8 @@ public class Lion extends Animal {
 	}
 
 	public static void main(String[] args) {
+
+		//// calling the constructor in same class
 		Lion simba = new Lion("Simba");
 		simba.setAge(10); // setAge() method was not defined in Lion; it is inherited from Animal
 		simba.roar();

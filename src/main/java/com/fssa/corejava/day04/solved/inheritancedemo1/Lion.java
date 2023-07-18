@@ -1,5 +1,7 @@
 package com.fssa.corejava.day04.solved.inheritancedemo1;
 
+//lion.java
+
 public class Lion extends Animal { // extends keyword use to inherit variables and methods from Animal
 	private void roar() {
 		System.out.println("The " + getAge() + " year old lion says: Roar!");

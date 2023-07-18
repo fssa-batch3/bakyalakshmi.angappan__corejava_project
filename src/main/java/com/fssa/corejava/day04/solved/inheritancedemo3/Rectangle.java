@@ -1,5 +1,8 @@
 package com.fssa.corejava.day04.solved.inheritancedemo3;
 
+//Concrete class 
+// rectangle class is the first non abstracted inherited class from the abstract class.
+
 public class Rectangle extends Polygon {
 
 	protected double length;
@@ -21,7 +24,7 @@ public class Rectangle extends Polygon {
 	}
 
 	public int getNumberOfSides() {
-		return super.numberOfSides;
+		return this.numberOfSides;
 	}
 
 }
