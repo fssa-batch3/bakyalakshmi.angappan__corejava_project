@@ -17,5 +17,11 @@ public class ArrayListOfObject {
 
 		System.out.println(data);
 
+//		extra finding by id
+
+		String dataName = Task.findTaskById(1, arrayList);
+
+		System.out.println(dataName);
+
 	}
 }

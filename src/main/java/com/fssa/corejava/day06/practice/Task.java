@@ -35,4 +35,14 @@ public class Task {
 		}
 		return false;
 	}
+
+	public static String findTaskById(int id, ArrayList<Task> tasks) {
+		String taskName = "";
+		for (Task task : tasks) {
+			if (task.getPriority() == id) {
+				taskName = task.getTaskName();
+			}
+		}
+		return taskName;
+	}
 }
