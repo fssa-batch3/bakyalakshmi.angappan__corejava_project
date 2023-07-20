@@ -27,7 +27,7 @@ public class Practice02 {
 		System.out.println("ArrayList size:" + list.size());
 
 		Set<Integer> set = new HashSet<Integer>(list);
-		
+
 		System.out.println(set);
 
 		System.out.println("ArrayList size:" + set.size());

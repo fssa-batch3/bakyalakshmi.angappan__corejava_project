@@ -12,7 +12,7 @@ public class ConvertArraysToList {
 		deptNames[0] = "CSE";
 		deptNames[1] = "EEE";
 		deptNames[2] = "MECH";
-		List<String> list = Arrays.asList(deptNames);
+		String list = Arrays.toString(deptNames);
 		System.out.println(list);
 
 	}

@@ -9,19 +9,28 @@ public class Practice01 {
 		Scanner scanner = new Scanner(System.in);
 		String input = scanner.nextLine();
 
-		// Split the input string by commas
-		String[] names = input.split(", ");
+		String[] names = input.split(",");
 
 		HashMap<String, Integer> nameCounts = new HashMap<>();
 
 		for (String name : names) {
+
+//		map.getOrDefault(Object key,Default value)
+
+			// if there is no key then it will return 0
+
+//			if ram aldready have 1 then count is increased
+
 			nameCounts.put(name, nameCounts.getOrDefault(name, 0) + 1);
-			System.out.println(nameCounts);
 		}
 
 		System.out.println(nameCounts);
 
-		// Print the count for each name
+//	keyset()   - used to create a set out of the key elements contained in the hash map
+//	value() - [2,1,2,2,1]
+//  entrySet() - [{"ram":1},{"superman":1}]
+
+		// Print the count for each element in names set
 		for (String name : nameCounts.keySet()) {
 			int count = nameCounts.get(name);
 			System.out.println(name + ": " + count);

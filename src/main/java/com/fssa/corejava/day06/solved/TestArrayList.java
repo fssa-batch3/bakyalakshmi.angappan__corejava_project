@@ -15,8 +15,8 @@ public class TestArrayList {
 
 		// Display the city names
 		for (Object object : cityList) {
-			String cityName = (String) object; // TypeCast object to String
-			System.out.println(cityName);
+//			String cityName = (String) object; // TypeCast object to String
+			System.out.println(object);
 		}
 
 	}
